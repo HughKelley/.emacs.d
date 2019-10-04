@@ -1,0 +1,132 @@
+#+STARTUP: lognotedone
+#+STARTUP: showall
+#+STARTUP: indent
+
+;; the .emacs.el init file is saved in C/Users/Hugh/AppData/Roaming
+
+;; fine home directory using C-x d ~/ <RET> to navigate to that directory. 
+;; the directory will be listed in the first line and subsequent lines
+;; will list files in the directory
+
+;; shift left right to cycling through TODO tags
+;; shift tab to display more or less content
+;; M left right to change indentation
+;; https://orgmode.org/manual/Plain-lists.html
+
+;; c-c c-x c-a to archive a done task. 
+:: M-x dired to work with directories
+
+;; cut: C-w,  copy: M-w, paste: C-y
+
+
+;; pomidor shortcuts
+;; to run M-x pomidor
+;; Enter 	Start new pomodoro.
+;; Space 	Start a break.
+;; R 	Resets the timer.
+;; q 	Quit pomidor buffer.
+;; Q 	Turns off pomidor.
+
+;; Agenda
+
+;; C-c a opens agenda options menu 
+;; currently nothing in there .
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; LONG TERM TO DO 
+'''''''''''''''''''''''''''''''''''''''''''
+
+
+* Org Tasks
+** TODO Fill this doc up
+* CS stuff
+** writing
+*** medium
+**** intro to programming
+**** emacs
+**** linux
+** emacs
+*** WAITING separate to do lists by topic?
+gotta watch some more videos about peoples work flows
+*** TODO start using agenda
+*** TODO start using topic tags
+*** TODO Getting Things Done
+*** TODO Latex
+*** TODO Python
+*** TODO R
+*** TODO Pomidor
+** linux
+get started on this again once carolyn is home with a new computer
+*** CANCELLED Get network access
+this was just because I accidently downloaded the netinstall version of the os
+*** WAITING install basic packages
+*** WAITING download basic academic files and programs
+*** WAITING fix boot setup
+low priority
+*** WAITING work through Linux from scrath
+*** Installation plan
+basically, put old 250g ssd in and boot from linux usb. If it goes well, can then use old 1tb ssd as external. If goes badly can just put actual back in and have normal computer... maybe... except that linux installation could mess up boot entries so that it can't find 
+*** lisp
+**** IN-PROGRESS get comfortable with emacs
+*** project
+**** idea: London transport explorer
+***** Buses and trains, explore by line or by station
+***** map for exploring
+***** second page for descriptive and inferential statistics
+*** hackathons
+**** TODO Actual Hackathon
+*** Finish CS50
+**** final project
+*** Nand to Tetris
+*** Structure and Interpretation of Computer Languages
+*** Linux From Scratch
+* Personal
+** Housekeeping
+** meditation
+*** daily practice
+metta with appreciation of benefit of concentration and mindfulness
+*** integrate three trainings into daily life
+** Fitness
+*** yoga
+just stretch on my own, morning and night
+**** IN-PROGRESS stretching plan
+calves, glutes, hips, lower back/childs pose, wrists, shoulders
+this is going well. Feeling good and stretchy
+**** TODO core strength
+get into habit of basic core connection exercises each morning
+*** cycling
+**** plan france
+https://london2paris.co.uk/
+***** TODO get info from LSE thing
+***** TODO get info from Lionel and Ziggy
+***** TODO talk to UCL cycling
+***** TODO gauge interest
+***** TODO pick date
+**** Longer London bike rides
+***** Swains lane
+***** Richmond
+***** Twickenham
+** social
+*** TODO One Planned Social thing each week
+*** TODO One spontaneous social thing each week
+*** TODO Plan a long term social thing for April
+*** TODO Plan a social thing for the summer
+*** TODO Plan a social thing for after Dissertation is submitted
+** family
+** financial
+** 
+*** TODO Amend tax return to claim lifetime continuing education credit
+** reading
+*** CANCELLED Little Schemer
+*** IN-PROGRESS Golden Braid
+*** IN-PROGRESS GEt GTD
+*** TODO read Getting Things Done
+**** 43 folders
+*** IN-PROGRESS Get Lovingkindness
+*** TODO read Loving-Kindness
+* Small Stuff
+** trip with Ben and Pia
+** stuff at Institute of Making
+** fix sweater
+** bike freewheel
+try to get 17T 

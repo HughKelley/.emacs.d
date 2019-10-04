@@ -1,0 +1,76 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("C:/Users/Hugh/Documents/CS/Git/" . "first-contributions/")
+ ("c:/" . "Users/")
+ ("c:/Users/Hugh/AppData/" . "Roaming/")
+ ("c:/Users/Hugh/Documents/UCL_CASA_1819/DATA/" . "Wk_9/")
+ ("c:/Users/Hugh/Documents/UCL_CASA_1819/" . "SCCPG/")
+ ("c:/Users/Hugh/Documents/" . "UCL_CASA_1819/")
+ ("c:/Users/Hugh/" . "AppData/")
+ ("c:/Users/" . "Hugh/")
+ ("C:/Users/Hugh/Documents/CS/" . "national-rail-stations/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/Users/Hugh/Documents/CS/Org/"
+ "C:/Users/Hugh/Documents/CS/Org/"
+ "c:/Users/Hugh/AppData/Roaming/"
+ "C:/Users/Hugh/Documents/CS/"
+ "C:/Users/Hugh/Documents/CS/Git/first-contributions/"
+ "c:/Users/Hugh/Documents/UCL_CASA_1819/DATA/Wk_9/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "todo_ST_misc.org_archive"
+ ".emacs"
+ ".emacs.el"
+ "todo_ST_misc.org"
+ "todo_LT_misc.org"
+ "todo_career.org"
+ "qs_for_steve.org"
+ "medi_email.org"
+ "prog_exp.org"
+ "research_management_system.org"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/Hugh/Documents/CS/Org/" (23818 1714 0 0) "todo_ST_misc.org_archive" "todo_ST_misc.org" "todo_LT_misc.org" "todo_dissertation.org~" "todo_dissertation.org_archive~" "todo_dissertation.org_archive" "todo_dissertation.org" "todo_career.org" "Thoughts/" "Spain_travel.org" "research_management_system.org" "README.md" "qs_for_steve.org" "prog_exp.org" "old/" "medi_email.org" "jobs.org" "Data_Project.org" ".git/" ".#Spain_travel.org" "#Spain_travel.org#" "../" "./")
+
+ ("C:/Users/Hugh/Documents/CS/Org/" (23818 1714 0 0) "todo_ST_misc.org_archive" "todo_ST_misc.org" "todo_LT_misc.org" "todo_dissertation.org~" "todo_dissertation.org_archive~" "todo_dissertation.org_archive" "todo_dissertation.org" "todo_career.org" "Thoughts/" "Spain_travel.org" "research_management_system.org" "README.md" "qs_for_steve.org" "prog_exp.org" "old/" "medi_email.org" "jobs.org" "Data_Project.org" ".git/" ".#Spain_travel.org" "#Spain_travel.org#" "../" "./")
+
+ ("c:/Users/Hugh/AppData/Roaming/" (23818 1763 0 0) "Zotero/" "winscp.rnd" "WildTangent/" "WhatsApp/" "WebStorage/" "vlc/" "Sun/" "Sublime Text 3/" "Sublime Text 2/" "sp_data.sys" "Spotify/" "Slack/" "Skype/" "RStudio/" "Racket/" "R/" "QGIS/" "PomoDoneApp/" "NVIDIA/" "NOW TV Player/" "NOW TV/" "Notepad++/" "MySQL/" "Mozilla/" "MiKTeX/" "Microsoft/" "Macromedia/" "LibreOffice/" "jupyter/" "JetBrains/" "Jedi/" "Identities/" "ICAClient/" "GRASS7/" "Google/" "GIMP/" "foobar2000/" "F-Secure/" "ESRI/" "Enthought/" "dvdcss/" "Dropbox/" "DockerToolbox/" "CyberLink/" "crssync/" "BOINC/" "Audacity/" "ASUS/" "Adobe/" ".emacs~" ".emacs.el~" ".emacs.el" ".emacs.d/" ".emacs" "#message-20190121-103336#" "../" "./")
+
+ ("c:/Users/Hugh/AppData/" (23799 44518 0 0) "Roaming/" "LocalLow/" "Local/" ".docker/" "../" "./")
+
+ ("c:/Users/" (23799 44518 0 0) "Public/" "Hugh/" "desktop.ini" "Default.migrated/" "Default User/" "Default/" "All Users/" "../" "./")
+
+ ("c:/Users/Hugh/" (23799 44992 0 0) "Zotero/" "workspace/" "Wk3-Practial/" "Videos/" "Untitled.ipynb" "testtest.txt" "Templates/" "Start_Up_Script.py" "Start Menu/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "README.md" "QM-Coursework-1/" "PrintHood/" "portacle/" "Pictures/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "MicrosoftEdgeBackups/" "Magic Mouse Driver/" "Local Settings/" "Links/" "IntelGraphicsProfiles/" "Google Drive/" "gittest/" "Favorites/" "Evernote/" "emacs/" "eclipse-workspace/" "eclipse/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "Canopy/" "Application Data/" "AppData/" "AndroidStudioProjects/" "Anaconda3/" "3D Objects/" ".VirtualBox/" ".ssh/" ".spyder-py3/" ".plotly/" ".p2/" ".oracle_jre_usage/" ".matplotlib/" ".jupyter/" ".ipython/" ".ipynb_checkpoints/" ".gradle/" ".gitignore" ".gitconfig" ".enstaller4rc" ".eclipse/" ".docker/" ".condarc" ".conda/" ".cisco/" ".canopy_runtimes.json" ".cache/" ".bash_history" ".AndroidStudioBeta/" ".android/" ".anaconda/" "../" "./")
+
+ ("c:/Users/Hugh/Documents/" (23811 65300 0 0) "~$Tourny Schedule.xlsx" "~$Grad School Finances.xlsx" "UCL_CASA_1819/" "test_function.sql" "R/" "pg2360-images.mobi" "My Videos/" "My Pictures/" "My Music/" "Misc/" "Meditation/" "Global/" "Gear_Ratios.ods" "FirstSCript.ps1" "Financial/" "F-Secure/" "desktop.ini" "Custom Office Templates/" "CS/" "citation-5021773.ris" "Carolyn/" "Career/" "Car/" "Books/" "Autistic Burnout_ The Cost of Masking and Passing – Ryan Boren.pdf" "ArcGIS 10.6/" "ArcGIS/" "../" "./")
+
+ ("c:/Users/Hugh/Documents/CS/" (23799 42998 0 0) "Web_Dev/" "Reasoned Schemer/" "Reading/" "Racket/" "R/" "Python/" "Powershell/" "Parcel_Hack_2019/" "Org/" "national-rail-stations/" "Lisp/" "Linux/" "LaTeX_Templates/" "Git/" "CUSP/" "CS50/" "../" "./")
+
+ ("C:/Users/Hugh/Documents/CS/national-rail-stations/" (23716 36571 0 0) "stations.json" "stations.csv" "README.md" ".git/" "../" "./")
+
+ ("C:/Users/Hugh/Documents/CS/" (23799 42998 0 0) "Web_Dev/" "Reasoned Schemer/" "Reading/" "Racket/" "R/" "Python/" "Powershell/" "Parcel_Hack_2019/" "Org/" "national-rail-stations/" "Lisp/" "Linux/" "LaTeX_Templates/" "Git/" "CUSP/" "CS50/" "../" "./")
+
+ ("c:/Users/Hugh/Documents/UCL_CASA_1819/DATA/Wk_9/" (23755 4285 0 0) "__MACOSX/" "SDC09-JS2-Workshop.pdf" "flickrViewer_1/" "flickrViewer/" "../" "./")
+
+ ("C:/Users/Hugh/Documents/CS/Git/first-contributions/" (23703 59734 0 0) "translations/" "README.md" "package-lock.json" "LICENSE" "gitkraken-tutorial.md" "github-windows-vs2017-tutorial.md" "github-windows-vs-code-tutorial.md" "github-desktop-tutorial.md" "github-desktop-old-version-tutorial.md" "Contributors.md" "CODE_OF_CONDUCT.md" "assets/" "additional-material/" ".gitignore" ".github/" ".git/" "../" "./")
+
+ ("c:/Users/Hugh/Documents/UCL_CASA_1819/SCCPG/" (23700 46097 0 0) "Wk_1/" "SCCPG_Final/" "Reading/" "Project/" "../" "./")
+
+ ("C:/Users/Hugh/Documents/CS/Git/" (23703 59009 0 0) "first-contributions/" "../" "./")
+
+ ("c:/Users/Hugh/Documents/UCL_CASA_1819/DATA/" (23670 36105 0 0) "Yelp_Data/" "Wk_9/" "Wk_8/" "Wk_7/" "Wk_6/" "Wk_5/" "Wk_4/" "Wk_3/" "Wk_2/" "Wk_10/" "Wk_1/" "MatPlotLib/" "Data/" "../" "./")
+
+ ("c:/Users/Hugh/Documents/UCL_CASA_1819/" (23688 60055 0 0) "UST/" "USim/" "Urban Economics/" "UCL Financial Aid Docs/" "Schedule.odt" "Schedule.docx" "SCCPG/" "QM/" "GIS/" "Generic_CASA_Schedule.docx" "Disser/" "DATA/" "Applications/" "ABM/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

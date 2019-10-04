@@ -1,0 +1,85 @@
+#+STARTUP: lognotedone
+#+STARTUP: showall
+#+STARTUP: indent
+
+;; the .emacs.el init file is saved in C/Users/Hugh/AppData/Roaming
+
+;; fine home directory using C-x d ~/ <RET> to navigate to that directory. 
+;; the directory will be listed in the first line and subsequent lines
+;; will list files in the directory
+
+;; shift left right to cycling through TODO tags
+;; shift tab to display more or less content
+;; M left right to change indentation
+;; https://orgmode.org/manual/Plain-lists.html
+
+;; c-c c-x c-a to archive a done task. 
+:: M-x dired to work with directories
+
+;; cut: C-w,  copy: M-w, paste: C-y
+
+
+;; pomidor shortcuts
+;; to run M-x pomidor
+;; Enter 	Start new pomodoro.
+;; Space 	Start a break.
+;; R 	Resets the timer.
+;; q 	Quit pomidor buffer.
+;; Q 	Turns off pomidor.
+
+;; Agenda
+
+;; C-c a opens agenda options menu 
+;; currently nothing in there .
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; CAREER TO DO
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+* Primary Tasks
+** TODO Fill this framework up with todos
+* Find a Job
+** prep materials
+*** Resume
+*** Cover Letter
+*** Code examples
+*** Github
+*** Linkedin
+*** Stackoverflow
+** apply
+*** Places
+**** DC
+**** NYC
+**** Boston
+**** London
+first
+*** Job sites
+**** Linkedin
+**** Stackoverflow
+**** 80,000 hours
+**** Glassdoor
+** interview
+*** Practice with Pili
+**** TODO ask her general advice
+**** TODO set up specific interview time
+*** Practice with Steven?
+**** TODO ask him if he would be willing
+*** Practice with Nick Char? 
+**** TODO mention to Carolyn
+**** TODO ask Nick
+**** TODO set up time
+*** Practice with UCL careers? 
+**** find out set up
+**** schedule time
+** code tests
+*** codesignal
+*** Leetcode
+*** hackerrank
+* Career
+** Write new resume in latex
+** interests
+** informational interviews
+*** Geolytix*** Hackerrank?
+*** Leetcode?
+

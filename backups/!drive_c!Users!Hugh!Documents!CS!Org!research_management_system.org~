@@ -1,0 +1,18 @@
++# Outline for a Research Management Software Tool
+
+* Parts
+** File viewing system
+** File management system
+** File metadata
+** PDF access
+** bibliography management
+* Actions
+** Sort references by variable
+** View secondary references
+** Add secondary reference to primary reference list
+** add pdf to reference item
+** build .bib file
+** Add initial references
+
+
+

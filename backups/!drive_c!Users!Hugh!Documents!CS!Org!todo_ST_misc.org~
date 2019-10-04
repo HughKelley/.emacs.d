@@ -1,0 +1,62 @@
+
+#+STARTUP: lognotedone
+#+STARTUP: showall
+#+STARTUP: indent
+
+;; the .emacs.el init file is saved in C/Users/Hugh/AppData/Roaming
+
+;; fine home directory using C-x d ~/ <RET> to navigate to that directory. 
+;; the directory will be listed in the first line and subsequent lines
+;; will list files in the directory
+
+;; shift left right to cycling through TODO tags
+;; shift tab to display more or less content
+;; M left right to change indentation
+;; https://orgmode.org/manual/Plain-lists.html
+
+;; c-c c-x c-a to archive a done task. 
+:: M-x dired to work with directories
+
+;; cut: C-w,  copy: M-w, paste: C-y
+
+
+;; pomidor shortcuts
+;; to run M-x pomidor
+;; Enter 	Start new pomodoro.
+;; Space 	Start a break.
+;; R 	Resets the timer.
+;; q 	Quit pomidor buffer.
+;; Q 	Turns off pomidor.
+
+;; Agenda
+
+;; C-c a opens agenda options menu 
+;; currently nothing in there .
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;  SHORT TERM TO DO
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+* Org Tasks
+** TODO Fill this doc up
+** 
+
+
+
+* Standing task: complete daily things, evernote checklist
+* TODO Mac Meetup
+* TODO Yoga fri morning
+* TODO work friday night
+* 
+
+
+
+* Org Tasks
+** TODO Clean up this doc so that it's up to date
+** TODO emacs/org mode calendar
+** TODO migrate projects from evernote to org mode
+** TODO emacs pomidor 
+** TODO set up org agenda
+** TODO add dates to todos
+** TODO add priorities to todos
