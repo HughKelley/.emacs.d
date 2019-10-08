@@ -37,12 +37,14 @@
               ; start up screen
 (setq-default tab-width 4)
 
-(setq default-directory "C:/Users/Hugh/Documents/CS/")
+;;(setq default-directory "C:/Users/Hugh/Documents/CS/")
 
 (setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "CANCELLED" "DONE")))
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 
+;; bind C-x g to magit-status
+(global-set-key (kbd "C-x g") 'magit-status)
 ;;(debug-on-variable-change 'org-agenda-files)
 (setq org-agenda-files (list "C:/Users/Hugh/Documents/CS/Org"))
 
