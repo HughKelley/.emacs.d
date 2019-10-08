@@ -14,7 +14,7 @@
 ;;(princ (format "Hello, %s!\n" "World"))
 
 (transient-mark-mode 1)
-
+;;
 ;; load emacs 24's package system. Add MELPA repository.
 (when (>= emacs-major-version 24)
   (require 'package)
