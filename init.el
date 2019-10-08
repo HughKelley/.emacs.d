@@ -38,6 +38,8 @@
 (setq-default tab-width 4)
 
 (setq default-directory "C:/Users/Hugh/Documents/CS/")
+(global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "C-x M-g") 'magit-dispatch)
 
 (setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "CANCELLED" "DONE")))
 (define-key global-map "\C-cl" 'org-store-link)
