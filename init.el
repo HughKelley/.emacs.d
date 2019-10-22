@@ -14,6 +14,14 @@
 ;;(princ (format "Hello, %s!\n" "World"))
 
 (transient-mark-mode 1)
+
+;; show line numbers on all files
+(require 'linum)
+
+(when (version<= "26.0.50" emacs-version )
+  (global-display-line-numbers-mode))
+(when (version< emacs-version "26.0.50")
+  (global-linum-mode 1))
 ;;
 ;; load emacs 24's package system. Add MELPA repository.
 (when (>= emacs-major-version 24)
