@@ -8,6 +8,8 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+;; test change on asus branch
+
 ;; the startup screen also sets the home directory to emacs/bin
 (setq inhibit-startup-screen t) 
 
