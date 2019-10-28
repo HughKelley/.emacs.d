@@ -39,6 +39,10 @@
   :init
   (elpy-enable))
 
+;; set python interpreter path
+(setq python-shell-interpreter "/usr/bin/python3")
+
+
 (require 'org-install)
 (require 'org)						       	;org mode
 (setq org-log-done 'note)
