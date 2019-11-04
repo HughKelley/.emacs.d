@@ -15,6 +15,8 @@
 
 (transient-mark-mode 1)
 
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 ;; show line numbers on all files
 (require 'linum)
 
