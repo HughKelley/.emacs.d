@@ -20,7 +20,7 @@
 ;; show line numbers on all files
 (require 'linum)
 
-(when (version<= "26.0.50" emacs-version )
+(when (version<= "26.0.50" emacs-version )(add-to-list 'default-frame-alist '(fullscreen . maximized))
   (global-display-line-numbers-mode))
 (when (version< emacs-version "26.0.50")
   (global-linum-mode 1))
@@ -41,7 +41,8 @@
   :init
   (elpy-enable))
 
-;; set python interpreter path
+;; set python interpreter path for tpad...
+;; not sure what this will do on another computer, nothing good for sure 
 (setq python-shell-interpreter "/usr/bin/python3")
 
 
