@@ -77,7 +77,7 @@
  '(org-tags-column -90)
  '(package-selected-packages
    (quote
-	(use-package elpy magit pdf-tools org-pomodoro better-defaults pomidor))))
+	(slime use-package elpy magit pdf-tools org-pomodoro better-defaults pomidor))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
