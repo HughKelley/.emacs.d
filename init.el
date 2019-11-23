@@ -8,6 +8,8 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+;; test change on asus branch
+
 ;; the startup screen also sets the home directory to emacs/bin
 (setq inhibit-startup-screen t) 
 
@@ -15,6 +17,14 @@
 
 (transient-mark-mode 1)
 
+;; show line numbers on all files
+(require 'linum)
+
+(when (version<= "26.0.50" emacs-version )
+  (global-display-line-numbers-mode))
+(when (version< emacs-version "26.0.50")
+  (global-linum-mode 1))
+;;
 ;; load emacs 24's package system. Add MELPA repository.
 (when (>= emacs-major-version 24)
   (require 'package)
