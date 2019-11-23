@@ -8,6 +8,8 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+;; test change on asus branch
+
 ;; the startup screen also sets the home directory to emacs/bin
 (setq inhibit-startup-screen t) 
 
@@ -67,10 +69,13 @@
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(custom-enabled-themes (quote (misterioso)))
+ '(org-modules
+   (quote
+	(org-bbdb org-bibtex org-docview org-gnus org-habit org-info org-irc org-mhe org-rmail org-w3m)))
  '(org-tags-column -90)
  '(package-selected-packages
    (quote
-	(use-package elpy magit pdf-tools org-pomodoro better-defaults pomidor))))
+	(web-mode use-package elpy magit pdf-tools org-pomodoro better-defaults pomidor))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
