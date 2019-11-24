@@ -36,16 +36,22 @@
 
 (require 'use-package)
 
+(require 'elpy)
 (use-package elpy
   :ensure t
   :init
   (elpy-enable))
 
 (require 'org-install)
-(require 'org)						       	;org mode
+(require 'org)
+(require 'org-habit)
+(add-to-list 'org-modules "org-habit")
+;org mode
 (setq org-log-done 'note)
               ; start up screen
 (setq-default tab-width 4)
+
+(setq org-habit-graph-column 80)
 
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x M-g") 'magit-dispatch)
