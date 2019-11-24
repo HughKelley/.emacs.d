@@ -64,7 +64,7 @@
 ;; bind C-x g to magit-status
 (global-set-key (kbd "C-x g") 'magit-status)
 ;;(debug-on-variable-change 'org-agenda-files)
-(setq org-agenda-files (list "C:/Users/Hugh/Documents/CS/Org"))
+(setq org-agenda-files (list "~/code/org/gtd.org"))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -74,6 +74,7 @@
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(custom-enabled-themes (quote (misterioso)))
+ '(org-agenda-files (quote ("~/code/org/gtd.org")))
  '(org-tags-column -90)
  '(package-selected-packages
    (quote
