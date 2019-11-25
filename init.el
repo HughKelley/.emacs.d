@@ -71,10 +71,10 @@
 (setq org-agenda-inhibit-startup t)
 (setq org-agenda-use-tag-inheritance t)
 (setq org-agenda-show-log t)
-(setq org-agenda-skip-scheduled-if-done t)
-(setq org-agenda-skip-deadline-if-done t)
+;(setq org-agenda-skip-scheduled-if-done t)
+;(setq org-agenda-skip-deadline-if-done t)
 (setq org-agenda-skip-deadline-prewarning-if-scheduled 'pre-scheduled)
-(setq org-habit-show-habits-only-for-today nil)
+;(setq org-habit-show-habits-only-for-today nil)
 ;org mode
 (setq org-log-done 'note)
               ; start up screen
@@ -96,12 +96,17 @@
 
 (setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "CANCELLED" "DONE")))
 (define-key global-map "\C-cl" 'org-store-link)
-(define-key global-map "\C-c a" 'org-agenda)
+(define-key global-map "\C-ca" 'org-agenda)
 
 ;; bind C-x g to magit-status
 (global-set-key (kbd "C-x g") 'magit-status)
 ;;(debug-on-variable-change 'org-agenda-files)
+
+; for asus
 (setq org-agenda-files (list "C:/Users/Hugh/Documents/CS/Org"))
+
+; for tpad
+;(setq org-agenda-files (list "~/code/org"))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
