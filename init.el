@@ -1,4 +1,10 @@
 
+
+
+;; helpful examples
+
+;; https://github.com/gjstein/emacs.d/blob/master/init.el
+
 ;; can use M-x eval-buffer to reload this file after changes. 
 ;; use C-H v user-init-file RET to check location of init file
 
@@ -6,6 +12,8 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
+
+
 (package-initialize)
 
 ;; test change on asus branch
@@ -46,12 +54,40 @@
 (require 'org)
 (require 'org-habit)
 (add-to-list 'org-modules "org-habit")
+
+(setq org-modules '(org-bbdb
+                    org-gnus
+                    org-info
+                    org-habit
+                    org-irc
+                    toc-org))
+
+(eval-after-load 'org
+ '(org-load-modules-maybe t))
+
+(setq org-agenda-span 6)
+(setq org-agenda-tags-column -100) ; take advantage of the screen width
+(setq org-agenda-sticky nil)
+(setq org-agenda-inhibit-startup t)
+(setq org-agenda-use-tag-inheritance t)
+(setq org-agenda-show-log t)
+(setq org-agenda-skip-scheduled-if-done t)
+(setq org-agenda-skip-deadline-if-done t)
+(setq org-agenda-skip-deadline-prewarning-if-scheduled 'pre-scheduled)
+(setq org-habit-show-habits-only-for-today nil)
 ;org mode
 (setq org-log-done 'note)
               ; start up screen
 (setq-default tab-width 4)
 
 (setq org-habit-graph-column 80)
+
+;(setq org-agenda-span 10)
+(setq org-agenda-start-day "-2d")
+
+;(setq org-agenda-start-day "-1d")
+;(setq org-agenda-span 5)
+;(setq org-agenda-start-on-weekday nil)
 
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x M-g") 'magit-dispatch)
@@ -60,7 +96,7 @@
 
 (setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "CANCELLED" "DONE")))
 (define-key global-map "\C-cl" 'org-store-link)
-(define-key global-map "\C-ca" 'org-agenda)
+(define-key global-map "\C-c a" 'org-agenda)
 
 ;; bind C-x g to magit-status
 (global-set-key (kbd "C-x g") 'magit-status)
@@ -81,7 +117,7 @@
  '(org-tags-column -90)
  '(package-selected-packages
    (quote
-	(web-mode use-package elpy magit pdf-tools org-pomodoro better-defaults pomidor))))
+	(toc-org web-mode use-package elpy magit pdf-tools org-pomodoro better-defaults pomidor))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
