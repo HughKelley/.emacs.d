@@ -35,3 +35,5 @@ srecode-map.el
 
 /transient
 /server
+/eshell
+/snippets
