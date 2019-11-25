@@ -96,7 +96,7 @@
 
 (setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "CANCELLED" "DONE")))
 (define-key global-map "\C-cl" 'org-store-link)
-(define-key global-map "\C-c a" 'org-agenda)
+(define-key global-map "\C-ca" 'org-agenda)
 
 ;; bind C-x g to magit-status
 (global-set-key (kbd "C-x g") 'magit-status)
