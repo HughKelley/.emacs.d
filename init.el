@@ -63,7 +63,17 @@
                     toc-org))
 
 (eval-after-load 'org
- '(org-load-modules-maybe t))
+  '(org-load-modules-maybe t))
+
+(if (require 'toc-org nil t)
+    (add-hook 'org-mode-hook 'toc-org-mode)
+
+    ;; enable in markdown, too
+    (add-hook 'markdown-mode-hook 'toc-org-mode)
+    (define-key markdown-mode-map (kbd "\C-c\C-o") 'toc-org-markdown-follow-thing-at-point)
+  (warn "toc-org not found"))
+
+
 
 (setq org-agenda-span 6)
 (setq org-agenda-tags-column -100) ; take advantage of the screen width
@@ -101,7 +111,9 @@
 ;; bind C-x g to magit-status
 (global-set-key (kbd "C-x g") 'magit-status)
 ;;(debug-on-variable-change 'org-agenda-files)
-(setq org-agenda-files (list "C:/Users/Hugh/Documents/CS/Org"))
+;(setq org-agenda-files (list "C:/Users/Hugh/Documents/CS/Org"))
+
+(setq org-agenda-files (list "~/code/org"))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
