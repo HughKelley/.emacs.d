@@ -16,6 +16,21 @@
 
 (package-initialize)
 
+;; my changes
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+;; paste
+(global-set-key (kbd "C-f") 'isearch-forward-regexp)
+;; copy
+
+;; copy paste mode when text is highlighted
+(cua-mode t)
+(setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
+(transient-mark-mode 1) ;; No region when it is not highlighted
+(setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
+
+;; cut
+
 ;; test change on asus branch
 
 ;; the startup screen also sets the home directory to emacs/bin
