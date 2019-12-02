@@ -16,6 +16,21 @@
 
 (package-initialize)
 
+;; my changes
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+;; paste
+(global-set-key (kbd "C-f") 'isearch-forward-regexp)
+;; copy
+
+;; copy paste mode when text is highlighted
+(cua-mode t)
+(setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
+(transient-mark-mode 1) ;; No region when it is not highlighted
+(setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
+
+;; cut
+
 ;; test change on asus branch
 
 ;; the startup screen also sets the home directory to emacs/bin
@@ -63,7 +78,17 @@
                     toc-org))
 
 (eval-after-load 'org
- '(org-load-modules-maybe t))
+  '(org-load-modules-maybe t))
+
+(if (require 'toc-org nil t)
+    (add-hook 'org-mode-hook 'toc-org-mode)
+
+    ;; enable in markdown, too
+    (add-hook 'markdown-mode-hook 'toc-org-mode)
+    (define-key markdown-mode-map (kbd "\C-c\C-o") 'toc-org-markdown-follow-thing-at-point)
+  (warn "toc-org not found"))
+
+
 
 (setq org-agenda-span 6)
 (setq org-agenda-tags-column -100) ; take advantage of the screen width
@@ -104,6 +129,9 @@
 
 ; for asus
 (setq org-agenda-files (list "C:/Users/Hugh/Documents/CS/Org"))
+
+;(setq org-agenda-files (list "~/code/org"))
+
 
 ; for tpad
 ;(setq org-agenda-files (list "~/code/org"))
