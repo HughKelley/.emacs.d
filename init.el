@@ -24,10 +24,10 @@
 ;; copy
 
 ;; copy paste mode when text is highlighted
-(cua-mode t)
-(setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
-(transient-mark-mode 1) ;; No region when it is not highlighted
-(setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
+;(cua-mode t)
+;(setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
+;(transient-mark-mode 1) ;; No region when it is not highlighted
+;(setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
 
 ;; cut
 
@@ -128,9 +128,9 @@
 ;;(debug-on-variable-change 'org-agenda-files)
 
 ; for asus
-(setq org-agenda-files (list "C:/Users/Hugh/Documents/CS/Org"))
+;(setq org-agenda-files (list "C:/Users/Hugh/Documents/CS/Org"))
 
-;(setq org-agenda-files (list "~/code/org"))
+(setq org-agenda-files (list "~/code/org"))
 
 
 ; for tpad
