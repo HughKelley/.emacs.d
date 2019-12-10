@@ -88,7 +88,8 @@
     (define-key markdown-mode-map (kbd "\C-c\C-o") 'toc-org-markdown-follow-thing-at-point)
   (warn "toc-org not found"))
 
-
+(setq org-clock-persist 'history)
+(org-clock-persistence-insinuate)
 
 (setq org-agenda-span 6)
 (setq org-agenda-tags-column -100) ; take advantage of the screen width
