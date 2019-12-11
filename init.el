@@ -1,5 +1,10 @@
 
-
+;; to diff between os's
+;;(load-file (expand-file-name
+  ;;          (cond ((eq system-type 'windows-nt) "windows.el")
+    ;;              ((eq system-type 'gnu/linux) "linux.el")
+      ;;            (t "default-system.el"))
+        ;;    user-emacs-directory))
 
 ;; helpful examples
 
