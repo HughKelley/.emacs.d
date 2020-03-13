@@ -134,6 +134,9 @@
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 
+(setq org-clock-persist 'history)
+(org-clock-persistence-insinuate)
+
 ;; bind C-x g to magit-status
 (global-set-key (kbd "C-x g") 'magit-status)
 ;(debug-on-variable-change 'org-agenda-files)
@@ -145,7 +148,7 @@
 
 ;(setq org-agenda-files (list "C:/Users/hkelley/Documents/org/gtd.org"))
 
-(setq org-agenda-files (list "C:/Users/hkelley/Documents/org/TDG_Work.org" "C:/Users/hkelley/Documents/org/habits.org" "C:/Users/hkelley/Documents/org/gtd.org"))
+(setq org-agenda-files (list "C:/Users/hkelley/code/org/TDG_Work.org" "C:/Users/hkelley/code/org/habits.org" "C:/Users/hkelley/code/org/gtd.org" "C:/Users/hkelley/code/org/habits.org" "C:/Users/hkelley/code/org/personal_habits.org"))
 
 
 
