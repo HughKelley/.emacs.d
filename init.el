@@ -191,6 +191,13 @@
 (setq pomidor-sound-tick nil
       pomidor-sound-tack nil)
 
+(use-package org-pomodoro
+  :ensure t
+  :commands (org-pomodoro)
+  :config
+    (setq alert-user-configuration (quote ((((:category . "org-pomodoro")) libnotify nil)))))
+
+
 (global-visual-line-mode t)
 
 (defalias 'list-buffers 'ibuffer) ; make ibuffer default
