@@ -85,18 +85,19 @@
 (eval-after-load 'org
   '(org-load-modules-maybe t))
 
-(if (require 'toc-org nil t)
-    (add-hook 'org-mode-hook 'toc-org-mode)
-
+;(if (require 'toc-org nil t)
+ ;   (add-hook 'org-mode-hook 'toc-org-mode)
+;
     ;; enable in markdown, too
-    (add-hook 'markdown-mode-hook 'toc-org-mode)
-    (define-key markdown-mode-map (kbd "\C-c\C-o") 'toc-org-markdown-follow-thing-at-point)
-  (warn "toc-org not found"))
+ ;   (add-hook 'markdown-mode-hook 'toc-org-mode)
+  ;  (define-key markdown-mode-map (kbd "\C-c\C-o") 'toc-org-markdown-follow-thing-at-point)
+;  (warn "toc-org not found"))
 
 (setq org-clock-persist 'history)
 (org-clock-persistence-insinuate)
+(setq org-agenda-archives-mode t)
 
-(setq org-agenda-span 6)
+(setq org-agenda-span 10)
 (setq org-agenda-tags-column -100) ; take advantage of the screen width
 (setq org-agenda-sticky nil)
 (setq org-agenda-inhibit-startup t)
@@ -108,13 +109,16 @@
 ;(setq org-habit-show-habits-only-for-today nil)
 ;org mode
 (setq org-log-done 'note)
-              ; start up screen
+										; start up screen
+(setq org-agenda-skip-scheduled-if-done t)
+(setq org-agenda-skip-deadline-if-done t)
+(setq org-agenda-skip-if-done t)
 (setq-default tab-width 4)
 
 (setq org-habit-graph-column 80)
 
 ;(setq org-agenda-span 10)
-(setq org-agenda-start-day "-2d")
+(setq org-agenda-start-day "-5d")
 
 ;(setq org-agenda-start-day "-1d")
 ;(setq org-agenda-span 5)
@@ -122,21 +126,30 @@
 
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x M-g") 'magit-dispatch)
-;;(setq default-directory "C:/Users/Hugh/Documents/CS/")
+(setq default-directory "C:/Users/hkelley/")
 
 
-(setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "CANCELLED" "DONE")))
+;(setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "CANCELLED" "DONE")))
+(setq org-todo-keywords '("TODO" "IN-PROGRESS" "WAITING" "|" "DONE" "CANCELLED"))
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 
+(setq org-clock-persist 'history)
+(org-clock-persistence-insinuate)
+
 ;; bind C-x g to magit-status
 (global-set-key (kbd "C-x g") 'magit-status)
-;;(debug-on-variable-change 'org-agenda-files)
+;(debug-on-variable-change 'org-agenda-files)
 
 ; for asus
 ;(setq org-agenda-files (list "C:/Users/Hugh/Documents/CS/Org"))
 
-(setq org-agenda-files (list "~/code/org"))
+;(setq org-agenda-files '("C:/Users/hkelley/Documents/org"))
+
+;(setq org-agenda-files (list "C:/Users/hkelley/Documents/org/gtd.org"))
+
+(setq org-agenda-files (list "C:/Users/hkelley/code/org/TDG_Work.org" "C:/Users/hkelley/code/org/habits.org" "C:/Users/hkelley/code/org/gtd.org" "C:/Users/hkelley/code/org/habits.org" "C:/Users/hkelley/code/org/personal_habits.org"))
+
 
 
 ; for tpad
@@ -150,6 +163,7 @@
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(custom-enabled-themes (quote (misterioso)))
+ ;'(org-agenda-files nil)
  '(org-modules
    (quote
 	(org-bbdb org-bibtex org-docview org-gnus org-habit org-info org-irc org-mhe org-rmail org-w3m)))
@@ -176,6 +190,13 @@
 
 (setq pomidor-sound-tick nil
       pomidor-sound-tack nil)
+
+(use-package org-pomodoro
+  :ensure t
+  :commands (org-pomodoro)
+  :config
+    (setq alert-user-configuration (quote ((((:category . "org-pomodoro")) libnotify nil)))))
+
 
 (global-visual-line-mode t)
 
