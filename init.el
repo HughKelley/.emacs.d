@@ -95,12 +95,13 @@
 
 (setq org-clock-persist 'history)
 (org-clock-persistence-insinuate)
-(setq org-agenda-archives-mode t)
+;; (setq org-agenda-archives-mode t)
 
 (setq org-agenda-span 10)
 (setq org-agenda-tags-column -100) ; take advantage of the screen width
 (setq org-agenda-sticky nil)
 (setq org-agenda-inhibit-startup t)
+(setq org-agenda-repeating-timestamp-show-all nil)
 (setq org-agenda-use-tag-inheritance t)
 (setq org-agenda-show-log t)
 ;(setq org-agenda-skip-scheduled-if-done t)
@@ -109,6 +110,7 @@
 ;(setq org-habit-show-habits-only-for-today nil)
 ;org mode
 (setq org-log-done 'note)
+(setq org-hide-leading-stars t)
 										; start up screen
 (setq org-agenda-skip-scheduled-if-done t)
 (setq org-agenda-skip-deadline-if-done t)
@@ -119,6 +121,7 @@
 
 ;(setq org-agenda-span 10)
 (setq org-agenda-start-day "-5d")
+(setq org-startup-folded t)
 
 ;(setq org-agenda-start-day "-1d")
 ;(setq org-agenda-span 5)
@@ -148,7 +151,7 @@
 
 ;(setq org-agenda-files (list "C:/Users/hkelley/Documents/org/gtd.org"))
 
-(setq org-agenda-files (list "C:/Users/hkelley/code/org/TDG_Work.org" "C:/Users/hkelley/code/org/habits.org" "C:/Users/hkelley/code/org/gtd.org" "C:/Users/hkelley/code/org/habits.org" "C:/Users/hkelley/code/org/personal_habits.org"))
+(setq org-agenda-files (list "C:/Users/hkelley/code/org/TDG_Work.org" "C:/Users/hkelley/code/org/habits.org" "C:/Users/hkelley/code/org/gtd.org"))
 
 
 
@@ -163,7 +166,9 @@
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(custom-enabled-themes (quote (misterioso)))
- ;'(org-agenda-files nil)
+ '(org-agenda-files
+   (quote
+	("C:/Users/hkelley/code/org/TDG_Work.org" "C:/Users/hkelley/code/org/habits.org" "C:/Users/hkelley/code/org/gtd.org")))
  '(org-modules
    (quote
 	(org-bbdb org-bibtex org-docview org-gnus org-habit org-info org-irc org-mhe org-rmail org-w3m)))
