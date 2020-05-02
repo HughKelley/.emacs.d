@@ -39,7 +39,8 @@
 ;; test change on asus branch
 
 ;; the startup screen also sets the home directory to emacs/bin
-(setq inhibit-startup-screen t) 
+(setq inhibit-startup-screen t)
+(setq default-directory "C:/Users/hkelley/")
 
 ;;(princ (format "Hello, %s!\n" "World"))
 
@@ -101,35 +102,20 @@
 (setq org-agenda-tags-column -100) ; take advantage of the screen width
 (setq org-agenda-sticky nil)
 (setq org-agenda-inhibit-startup t)
-(setq org-agenda-repeating-timestamp-show-all nil)
 (setq org-agenda-use-tag-inheritance t)
 (setq org-agenda-show-log t)
-;(setq org-agenda-skip-scheduled-if-done t)
-;(setq org-agenda-skip-deadline-if-done t)
+(setq org-agenda-show-future-repeats nil)
 (setq org-agenda-skip-deadline-prewarning-if-scheduled 'pre-scheduled)
-;(setq org-habit-show-habits-only-for-today nil)
-;org mode
 (setq org-log-done 'note)
 (setq org-hide-leading-stars t)
-										; start up screen
 (setq org-agenda-skip-scheduled-if-done t)
 (setq org-agenda-skip-deadline-if-done t)
 (setq org-agenda-skip-if-done t)
 (setq-default tab-width 4)
-
 (setq org-habit-graph-column 80)
-
-;(setq org-agenda-span 10)
 (setq org-agenda-start-day "-5d")
 (setq org-startup-folded t)
-
-;(setq org-agenda-start-day "-1d")
-;(setq org-agenda-span 5)
-;(setq org-agenda-start-on-weekday nil)
-
-(global-set-key (kbd "C-x g") 'magit-status)
-(global-set-key (kbd "C-x M-g") 'magit-dispatch)
-(setq default-directory "C:/Users/hkelley/")
+(define-key org-agenda-mode-map "y" 'org-agenda-todo-previousset)
 
 
 ;(setq org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "WAITING" "CANCELLED" "DONE")))
@@ -142,9 +128,10 @@
 
 ;; bind C-x g to magit-status
 (global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "C-x M-g") 'magit-dispatch)
 ;(debug-on-variable-change 'org-agenda-files)
 
-; for asus
+; for asusk
 ;(setq org-agenda-files (list "C:/Users/Hugh/Documents/CS/Org"))
 
 ;(setq org-agenda-files '("C:/Users/hkelley/Documents/org"))
@@ -153,8 +140,13 @@
 
 (setq org-agenda-files (list "C:/Users/hkelley/code/org/TDG_Work.org" "C:/Users/hkelley/code/org/habits.org" "C:/Users/hkelley/code/org/gtd.org"))
 
+(global-set-key (kbd "C-c u") 'sqlup-capitalize-keywords-in-region)
 
-
+(add-hook 'sql-mode-hook 'sqlup-mode)
+(add-hook 'sql-interactive-mode-hook 'sqlup-mode)
+(add-hook 'redis-mode-hook 'sqlup-mode)
+(setq sqlup-blacklist (list "generated"))
+;; (sql-set-product 'postgres)
 ; for tpad
 ;(setq org-agenda-files (list "~/code/org"))
 
@@ -175,7 +167,7 @@
  '(org-tags-column -90)
  '(package-selected-packages
    (quote
-	(toc-org web-mode use-package elpy magit pdf-tools org-pomodoro better-defaults pomidor))))
+	(sqlup-mode auto-complete ess toc-org web-mode use-package elpy magit pdf-tools org-pomodoro better-defaults pomidor))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
