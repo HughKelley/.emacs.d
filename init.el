@@ -38,6 +38,8 @@
 
 ;; test change on asus branch
 
+
+
 ;; the startup screen also sets the home directory to emacs/bin
 (setq inhibit-startup-screen t)
 (setq default-directory "C:/Users/hkelley/")
@@ -131,6 +133,13 @@
 (global-set-key (kbd "C-x M-g") 'magit-dispatch)
 ;(debug-on-variable-change 'org-agenda-files)
 
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+(add-hook 'yaml-mode-hook
+ '(lambda ()
+    (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+
+
 ; for asusk
 ;(setq org-agenda-files (list "C:/Users/Hugh/Documents/CS/Org"))
 
@@ -141,7 +150,7 @@
 (setq org-agenda-files (list "C:/Users/hkelley/code/org/TDG_Work.org" "C:/Users/hkelley/code/org/habits.org" "C:/Users/hkelley/code/org/gtd.org"))
 
 (global-set-key (kbd "C-c u") 'sqlup-capitalize-keywords-in-region)
-
+(setq sql-product 'postgres)
 (add-hook 'sql-mode-hook 'sqlup-mode)
 (add-hook 'sql-interactive-mode-hook 'sqlup-mode)
 (add-hook 'redis-mode-hook 'sqlup-mode)
@@ -167,7 +176,7 @@
  '(org-tags-column -90)
  '(package-selected-packages
    (quote
-	(sqlup-mode auto-complete ess toc-org web-mode use-package elpy magit pdf-tools org-pomodoro better-defaults pomidor))))
+	(yaml-mode indent-tools sqlup-mode auto-complete ess toc-org web-mode use-package elpy magit pdf-tools org-pomodoro better-defaults pomidor))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
